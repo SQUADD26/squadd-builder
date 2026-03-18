@@ -12,7 +12,7 @@ import { ConvergeNode } from "@/components/flow/ConvergeNode";
 import { ParallelNode } from "@/components/flow/ParallelNode";
 import { SmartConditionNode } from "@/components/flow/SmartConditionNode";
 import { InsertableEdge } from "@/components/flow/InsertableEdge";
-import { X, TrendingUp, Clock, Target, DollarSign, Users, BarChart3, Presentation } from "lucide-react";
+import { X, TrendingUp, Clock, Target, DollarSign, Users, BarChart3, Presentation, Zap } from "lucide-react";
 import { OfferOverlay } from "@/components/OfferOverlay";
 import {
   type PriceTier,
@@ -117,6 +117,18 @@ const REPORT_SECTIONS = [
     sources: [4],
   },
   {
+    icon: Zap,
+    title: "Velocit\u00E0 di contatto",
+    stat: "21x",
+    statLabel: "probabilit\u00E0 di qualifica",
+    body: "La ricerca di Harvard dimostra che contattare un lead entro 5 minuti dalla richiesta aumenta di 21 volte la probabilit\u00E0 di qualificarlo. Dopo 30 minuti, la probabilit\u00E0 crolla di 100 volte. Le aziende che rispondono entro un\u2019ora hanno 7 volte pi\u00F9 probabilit\u00E0 di avere una conversazione significativa rispetto a chi aspetta anche solo 60 minuti in pi\u00F9.",
+    highlights: [
+      { value: "5 min", label: "tempo ottimale di risposta" },
+      { value: "100x", label: "calo dopo 30 minuti" },
+    ],
+    sources: [11],
+  },
+  {
     icon: DollarSign,
     title: "Costo di acquisizione",
     stat: "-50%",
@@ -177,6 +189,7 @@ const REPORT_SOURCES: Record<number, { label: string; detail: string; url: strin
   8: { label: "Genesys Growth", detail: "Customer Acquisition Cost Benchmarks", url: "https://genesysgrowth.com/blog/customer-acquisition-cost-benchmarks-for-marketing-leaders" },
   9: { label: "Istat", detail: "ICT nelle imprese italiane, 2025", url: "https://www.istat.it/wp-content/uploads/2025/12/Statreport_ICT2025.pdf" },
   10: { label: "Forrester TEI", detail: "Intelligent Automation ROI, 2024", url: "https://tei.forrester.com/go/SSCBluePrism/IntelligentAutomation//docs/TEI_Of_SS-C_BluePrism_2024_4_4_PDFversion_FINAL.pdf" },
+  11: { label: "Harvard Business Review / InsideSales.com", detail: "The Short Life of Online Sales Leads, 2011", url: "https://hbr.org/2011/03/the-short-life-of-online-sales-leads" },
 };
 
 // ── Props ────────────────────────────────────────────
