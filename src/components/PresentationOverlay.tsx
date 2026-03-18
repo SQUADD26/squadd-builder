@@ -121,12 +121,13 @@ const REPORT_SECTIONS = [
     title: "Velocit\u00E0 di contatto",
     stat: "21x",
     statLabel: "probabilit\u00E0 di qualifica",
-    body: "La ricerca di Harvard dimostra che contattare un lead entro 5 minuti dalla richiesta aumenta di 21 volte la probabilit\u00E0 di qualificarlo. Dopo 30 minuti, la probabilit\u00E0 crolla di 100 volte. Le aziende che rispondono entro un\u2019ora hanno 7 volte pi\u00F9 probabilit\u00E0 di avere una conversazione significativa rispetto a chi aspetta anche solo 60 minuti in pi\u00F9.",
+    body: "Harvard Business Review, analizzando 2,24 milioni di lead, dimostra che rispondere entro 5 minuti aumenta di 21 volte la probabilit\u00E0 di qualifica. Ogni 10 minuti di ritardo abbatte le conversioni del 400%. Eppure il 78% dei clienti sceglie chi risponde per primo, mentre il tempo medio di risposta B2B \u00E8 ancora di 47 ore e il 63% delle aziende non risponde affatto.",
     highlights: [
-      { value: "5 min", label: "tempo ottimale di risposta" },
-      { value: "100x", label: "calo dopo 30 minuti" },
+      { value: "5 min", label: "finestra d\u2019oro" },
+      { value: "78%", label: "sceglie chi risponde prima" },
+      { value: "47h", label: "tempo medio di risposta B2B" },
     ],
-    sources: [11],
+    sources: [11, 12, 13],
   },
   {
     icon: DollarSign,
@@ -189,7 +190,9 @@ const REPORT_SOURCES: Record<number, { label: string; detail: string; url: strin
   8: { label: "Genesys Growth", detail: "Customer Acquisition Cost Benchmarks", url: "https://genesysgrowth.com/blog/customer-acquisition-cost-benchmarks-for-marketing-leaders" },
   9: { label: "Istat", detail: "ICT nelle imprese italiane, 2025", url: "https://www.istat.it/wp-content/uploads/2025/12/Statreport_ICT2025.pdf" },
   10: { label: "Forrester TEI", detail: "Intelligent Automation ROI, 2024", url: "https://tei.forrester.com/go/SSCBluePrism/IntelligentAutomation//docs/TEI_Of_SS-C_BluePrism_2024_4_4_PDFversion_FINAL.pdf" },
-  11: { label: "Harvard Business Review / InsideSales.com", detail: "The Short Life of Online Sales Leads, 2011", url: "https://hbr.org/2011/03/the-short-life-of-online-sales-leads" },
+  11: { label: "Harvard Business Review", detail: "The Short Life of Online Sales Leads \u2014 2,24M lead analizzati", url: "https://hbr.org/2011/03/the-short-life-of-online-sales-leads" },
+  12: { label: "MIT / InsideSales.com", detail: "Lead Response Management Study", url: "https://cdn2.hubspot.net/hub/25649/file-13535879-pdf/docs/mit_study.pdf" },
+  13: { label: "RevenueHero", detail: "Lead Response Time Benchmark, 2024 \u2014 1.000+ aziende", url: "https://www.revenuehero.io/blog/lead-response-time" },
 };
 
 // ── Props ────────────────────────────────────────────
