@@ -352,7 +352,7 @@ export function PresentationOverlay({
                                 )}
                                 <span className="text-muted-foreground/35 ml-1 hidden sm:inline">{comp.categoryLabel}</span>
                               </div>
-                              <span className="tabular-nums line-through text-muted-foreground/50 shrink-0">
+                              <span className="tabular-nums text-muted-foreground/50 shrink-0">
                                 &#8364;{comp.cost}/mese
                               </span>
                             </motion.div>
@@ -360,7 +360,7 @@ export function PresentationOverlay({
                         </div>
                         <div className="flex items-center justify-between px-4 py-3 border-t border-border/30 bg-foreground/[0.03] font-mono text-xs mt-auto">
                           <span className="font-bold uppercase tracking-widest text-muted-foreground">Totale</span>
-                          <span className="font-bold tabular-nums text-foreground/50 line-through">
+                          <span className="font-bold tabular-nums text-foreground/50">
                             &#8364;{totalExternal}/mese
                           </span>
                         </div>
